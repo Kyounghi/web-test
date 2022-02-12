@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+ 
+<div>
+ 
+<p>First Name: <input type="text" ng-model="firstName"></p>
+<p>Last Name: <input type="text" ng-model="lastName"></p>
+ 
+<p>Full Name: {{firstName + " " + lastName}}</p>
+<p class="test">tt5</p>
+ 
+</div>
+ 
+<script src="controller.js"></script>
+<script src="ui.js"></script>
+
+ 
+</body>
+</html> 
