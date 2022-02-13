@@ -1,0 +1,100 @@
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>selectable demo</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="https://code.angularjs.org/1.2.4/angular.js"></script>
+  <script src="jQuery.resizableColumns.js"></script>
+  <script src="script.js"></script>
+  <script>
+
+    $(function(){
+      
+    })
+    </script>
+  
+  <style>
+  #selectable .ui-selecting {
+    background: #ccc;
+  }
+  #selectable .ui-selected {
+    background: #999;
+  }
+  #selectable {
+
+    background-color: #eee;
+    width :100%;
+  }
+  .file {
+    display: inline-block;
+    width: 200px;
+    height :200px;
+    background-color: red;
+    margin: 10px;
+  
+  }
+  .file.selected {
+    background-color: blue !important;
+  }
+
+  table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #222;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  color: white;
+  background-color: #444;
+}
+  </style>
+  
+  
+</head>
+<body ng-controller="myCtrl">
+ 
+ <!-- div>
+   <div id="selectable">
+      <div>
+        <div class="file" ng-repeat="file in files" ng-class="{selected: file._selected}">{{ file.name }}</div>
+      </div>
+    </div>
+  </div-->
+
+
+  <table class="resizable">
+    <thead>
+        <tr>
+        <th> col 1 </th>
+        <th> col 2 </th>
+        <th> col 3 </th>
+        <th> col 4 </th>
+      </tr>
+      </thead>
+    <tbody>
+        <tr>
+        <td> Column 1 </td>
+        <td> Column 2 </td>
+        <td> Column 3 </td>
+        <td> Column 4 </td>
+      </tr>
+        <tr>
+        <td> Column 1 </td>
+        <td> Column 2 </td>
+        <td> Column 3 </td>
+        <td> Column 4 </td>
+      </tr>
+
+      </tbody>
+  </table>
+
+  
+</body>
+</html>
